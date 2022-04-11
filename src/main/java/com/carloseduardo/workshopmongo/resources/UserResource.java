@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,7 +18,7 @@ import java.util.stream.Collectors;
 public class UserResource {
 
     @Autowired
-    UserService service;
+    private UserService service;
 
     @GetMapping
     public ResponseEntity<List<UserDTO>> findAll() {

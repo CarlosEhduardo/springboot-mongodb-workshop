@@ -14,7 +14,7 @@ import java.util.Optional;
 public class UserService {
 
     @Autowired
-    UserRepository repository;
+    private UserRepository repository;
 
     public List<User> findAll() {
         List<User> list = repository.findAll();
